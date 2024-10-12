@@ -3,6 +3,11 @@
 
 ![preview][preview]
 
+# Changes
+- Made hyperlinks yellow to stand out
+- Made the entire line in the left sidebar clickable
+- Removed custom icons on the Status filter to prevent double line issue caused by making the entire line clickable (inefficient fix)
+
 # Features
 - It's dark, but not black
 - It has different colors for ratio-values (see screenshot)
