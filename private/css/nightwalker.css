@@ -10,6 +10,7 @@
     --color-ProgressBarFG: #ffffff;
     --color-ProgressBarBG: #2e78d8;
     --color-DarkSelected: #2e78d8;
+	--color-Yellow: #d1c52a;
 
     --color-RatioBad: #eb2a2a;
     --color-RatioAlmost: #e78310;
@@ -43,7 +44,7 @@ body,
 }
 
 a {
-    color: var(--color-White) !important;
+    color: var(--color-Yellow) !important;
 }
 
 #desktopNavbar li a {
@@ -435,32 +436,32 @@ td.statusBarSeparator {
 ----------------------------------------------------------------------------------------------*/
 
 ul.filterList a {
-    display: inline;
+    display: block;
 }
 
 #all_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #all_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f0b0";
+    #content: "\f0b0";
     font-weight: 900;
-    display: inline-block;
+    display: inline;
     margin-right: 5px;
     color: var(--color-White);
     padding-left: 5px;
 }
 
 #downloading_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #downloading_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f063";
+    #content: "\f063";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -469,13 +470,13 @@ ul.filterList a {
 }
 
 #seeding_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #seeding_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f062";
+    #content: "\f062";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -484,13 +485,13 @@ ul.filterList a {
 }
 
 #completed_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #completed_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f00c";
+    #content: "\f00c";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -499,13 +500,13 @@ ul.filterList a {
 }
 
 #resumed_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #resumed_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f04b";
+    #content: "\f04b";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -514,13 +515,13 @@ ul.filterList a {
 }
 
 #paused_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #paused_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f04c";
+    #content: "\f04c";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -529,13 +530,13 @@ ul.filterList a {
 }
 
 #errored_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #errored_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 16px;
-    content: "\f00d";
+    #content: "\f00d";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -544,13 +545,13 @@ ul.filterList a {
 }
 
 #active_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #active_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f0b0";
+    #content: "\f0b0";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -559,13 +560,13 @@ ul.filterList a {
 }
 
 #inactive_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #inactive_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f0b0";
+    #content: "\f0b0";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -574,13 +575,13 @@ ul.filterList a {
 }
 
 #stalled_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #stalled_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f0b0";
+    #content: "\f0b0";
     font-weight: 900;
     display: inline-block;
     margin-right: 5px;
@@ -589,13 +590,13 @@ ul.filterList a {
 }
 
 #stalled_uploading_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #stalled_uploading_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f093";
+    #content: "\f093";
     font-weight: 900;
     display: inline-block !important;
     margin-right: 5px;
@@ -604,13 +605,13 @@ ul.filterList a {
 }
 
 #stalled_downloading_filter>a img {
-    display: none;
+    display: inline-block;
 }
 
 #stalled_downloading_filter:before {
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
-    content: "\f019";
+    #content: "\f019";
     font-weight: 900;
     display: inline-block !important;
     margin-right: 5px;
