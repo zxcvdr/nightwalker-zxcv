@@ -7,6 +7,7 @@
 - Made hyperlinks yellow to better stand out
 - Made the entire line in the left sidebar clickable
 - Removed custom icons on the Status filter to prevent double line issue caused by making the entire line clickable (inefficient fix)
+- Only tested on 4.3.9
 
 # Features
 - It's dark, but not black
