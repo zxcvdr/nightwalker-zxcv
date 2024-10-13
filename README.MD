@@ -4,10 +4,11 @@
 ![preview][preview]
 
 # Changes from Main
-- Made hyperlinks yellow to better stand out
+- Only tested on 4.3.9
+- Made hyperlinks yellow to stand out more
 - Made the entire line in the left sidebar clickable
 - Removed custom icons on the Status filter to prevent double line issue caused by making the entire line clickable (inefficient fix)
-- Only tested on 4.3.9
+- Made selected items in the Left Sidebar and Dynamic Table blue to stand out more
 
 # Features
 - It's dark, but not black
