@@ -5,6 +5,7 @@
     --color-LessDark: #2a2f36;
     --color-Grey: #34373f;
     --color-GreySelected: #454952;
+	--color-BlueSelected: #3c5f96;
     --color-LightGrey: #51555f;
     --color-White: #dfdfdf;
     --color-ProgressBarFG: #ffffff;
@@ -104,14 +105,14 @@ a {
 
 .torrentTable tr.selected,
 .dynamicTable tr.selected {
-    background: var(--color-GreySelected) !important;
+    background: var(--color-BlueSelected) !important;
 }
 
 .torrentTable tr:hover,
 .dynamicTable tr:hover,
 ul.filterList li:hover,
 .selectedFilter {
-    background: var(--color-GreySelected) !important;
+    background: var(--color-BlueSelected) !important;
 }
 
 .toolbarTabs {
