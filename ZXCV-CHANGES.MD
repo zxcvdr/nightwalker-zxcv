@@ -1,38 +1,109 @@
 Only tested on 4.3.9
-I am not a coder, all changes made by googling then fiddling around and seeing what worked
+I am not a coder, all changes made by googling and fiddling around then seeing what worked
 In an acceptable state for my use case, will not be making further changes
+
+Note: Did not know GitHub showed extact changed so cleanly when I first made this file. Which is why I tracking exact code being changed in case I needed to look back on it
 
 all changes made in the following file
 nightwalker.css
 
 located at nightwalker-zxcv\private\css\nightwalker.css
 
-1.	Added new Line 13 --color-Yellow: #d1c52a;
-		All lines below shifted down 1 from original nightwalker-main as a result
+1.	Added --color-Yellow: #d1c52a;
+		
+	Changed
+-----------------------------------------------	
+			#Filters {
+    background: var(--color-Dark) !important;
+    color: var(--color-White);
+}
 
-2. 	Changed Line 47 from
-		color: var(--color-White) !important;
+a {
+    color: var(--color-White) !important;
+}
+
+----------------------------------------------
 	to
-		color: var(--color-Yellow) !important;
-	This makes hyperlinks stand out
+----------------------------------------------	
+		#Filters {
+    background: var(--color-Dark) !important;
+    color: var(--color-White);
+}
 
-3. Line 439
-		display: inline;
-	to
-		display: block;
-	This makes the entire line clickable on the Status filters
-	But makes the filters be split out into 2 lines. 1 with the unclickable custom icon and 1 with the clickable text
-	This is band-aid fixed in change 4.
+a {
+    color: var(--color-Yellow) !important;
+}
 
-4. Commented out the Custom Icons content items in the following lines
-		449, 464, 479, 494, 509, 524, 539, 554, 569, 584, 599, 614
-	This removes the custom icons but gets the Status filters back down to 1 Line
+-----------------------------------------------
+	This made the hyperlinks yellow to stand out more
+		
+
+In the /* ICONS IN LEFT SIDEBAR/FILTERLIST* section
+
+2.
+
+
+ul.filterList a {
+    display: inline;
+
 	
-5. Added the original icons back by making the following change
+	changed to 
+
+
+ul.filterList a {
+    display: block;
+
+
+	This makes the entire line clickable on the Left Sidebar
+	But makes the filters be split out into 2 lines. 1 with the unclickable custom icon and 1 with the clickable text
+	This is band-aid fixed with the next change.
+
+
+
+
+3. Commented out the Custom Icons "content:" lines in all the *_filter:before* sections
+	
+	
+4. Added the original icons back by making the following change in all the *_filter>a img* sections
+
+		
 		display: none;
 	to
 		display: inline-block;
-	On the following lines
-		443, 458, 473, 488, 503, 518, 533, 548, 563, 578, 593, 608
-		
+	
+
+	
+5. Added --color-BlueSelected: #3c5f96;
+	Made the filters and dynamic tables these colors instead of --color-GreySelected to stand out more
+	
+	
+	.dynamicTable tr.selected {
+    background: var(--color-GreySelected) !important;
+}
+
+	
+	and 
+	
+	
+	ul.filterList li:hover,
+.selectedFilter {
+    background: var(--color-GreySelected) !important;
+}
+
+
+	to
+
+
+	.dynamicTable tr.selected {
+    background: var(--color-BlueSelected) !important;
+}
+
+	
+	and 
+	
+	
+	ul.filterList li:hover,
+.selectedFilter {
+    background: var(--color-BlueSelected) !important;
+}
 
